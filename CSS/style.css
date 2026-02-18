@@ -5,11 +5,24 @@ html{
 p,button,a{
        font-family: 'Comfortaa';
        text-decoration: none;
+       font-size: 1vw;
+}
+
+a{
+   cursor: pointer;
 }
 
 h1{
    font-size: 4vw;
    line-height: 4.5vw;
+}
+
+h2{
+   font-size: 2vw;
+}
+
+h3{
+   font-size: 1.5vw;
 }
 
 h1,h2,h3{
@@ -88,6 +101,11 @@ body{
     margin-right: auto;
  }
 
+ #hero .hero-btn{
+   width: 12vw;
+   margin: auto;
+ }
+
  #hero button{
     color: #C71F02;
     background-color: white;
@@ -127,9 +145,769 @@ body{
     width: auto;
  }
 
- /* MAIN */
 
  #main{
+    margin: 0 15vw 0 15vw;
+ }
+
+ .introduction h3, p{
+    color: #6e6e6e;
+ }
+ .introduction{
+    width: auto;
+    height: auto;
+ }
+
+ .gallery h2{
+    text-align: center;
+ }
+
+ .collection1 h2{
+    text-align: center;
+ }
+
+ .collection1{
+    display: flex;
+
+ }
+
+ .collection1 div{
+    width: 20vw;
+    height: auto;
+    margin: auto;
+ }
+
+ .collection1 img{
+    width: inherit;
+    height: auto;
+    border-radius: 8px;
+ }
+
+ #portfolio-hero{
+  box-shadow: rgba(128, 128, 128, 0.545) 0px 10px 10px;
+ }
+
+#portfolio-hero h1{
+    width: 700px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    color:#C71F02;
+    text-align: center;
+    display: block;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+.portfolio-character{
+   gap: 3vw;
+    display: flex;
+    margin-bottom: 7vw;
+
+ }
+
+.portfolio-character div{
+    width: 20vw;
+    height: 20vw;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.572);
+    border-radius: 8px;
+ }
+
+ .portfolio-character div:hover{
+   scale: 0.95;
+   opacity: 90%;
+   transition: 300ms;
+ }
+
+.portfolio-character img{
+    width: inherit;
+    height: inherit;
+    border-radius: 8px;
+ }
+
+ .filter{
+   position: sticky;
+   z-index: 1000;
+   top: 30px;
+   background-color: #b6b6b642;
+   backdrop-filter: blur(8px) ;
+   display: flex;
+   width: 44vw;
+   height: auto;
+   margin: auto;
+   border-radius:24px;
+ }
+
+ .filter div{
+   margin: auto;
+ }
+
+.filter p{
+   color: rgb(67, 67, 67);
+
+}
+
+.filter a:hover{
+   opacity: 60%;
+   transition: 300ms;
+}
+
+#character, #motion, #logo{
+   scroll-margin-top: 7vw;
+}
+
+.project-header{
+   position: relative;
+   height: 35vw;
+}
+
+.coco-project-img{
+   display: flex;
+   justify-content: center;
+}
+
+.coco-project-img img{
+   width: 20vw;
+   height: auto;
+}
+
+.project-about{
+   position: absolute;
+   bottom: 0;
+}
+
+.coco-project-content{
+   margin: 8vw 0 5vw 0;
+   text-align: center;
+   width: auto;
+}
+
+.coco-project-content div{
+   width: inherit;
+   margin: auto;
+}
+
+.coco-project-content img{
+   width: 50vw;
+   height: auto;
+}
+
+.coco-project-content h2,h3{
+   margin: 0;
+}
+
+.coco-project-content h2{
+   margin-top: 5vw;
+}
+
+/* COCO PAGE */
+
+.project-img{
+   display: flex;
+   justify-content: center;
+}
+
+.project-img img{
+   width: 30vw;
+   height: auto;
+}
+
+.project-content{
+   margin: 5vw 0 5vw 0;
+   display: flex;
+   justify-content: space-between;
+}
+
+.project-content div{
+   width: 25vw;
+   margin: auto;
+}
+
+.project-content img{
+   width: 25vw;
+}
+ 
+/* MEOWLLOWEEN */
+
+.meow-project-img{
+   display: flex;
+   justify-content: center;
+}
+
+.meow-project-img img{
+   width: 15vw;
+   height: auto;
+}
+
+.meow-project-content{
+   margin-top: 15vw;
+   text-align: center;
+}
+
+.meow-gallery{
+   margin: 0 0 5vw 0;
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+}
+
+.meow-gallery div{
+   width: 18vw;
+   margin: auto;
+   justify-content: center;
+}
+
+.meow-gallery img{
+   width: inherit;
+}
+ 
+.meow-gallery2{
+   margin: 0 0 5vw 0;
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   text-align: left;
+}
+
+.meow-gallery2 div{
+   width: 29vw;
+   margin: auto;
+   justify-content: center;
+}
+
+.meow-gallery2 img{
+   width: inherit;
+}
+
+.meow-gallery3{
+   margin: 0 0 5vw 0;
+   text-align: center;
+}
+
+.meow-gallery3 div{
+   width: auto;
+   margin: auto;
+   justify-content: center;
+}
+
+.meow-gallery3 img{
+   width: 35vw;
+}
+
+.meow-gallery4{
+   margin: 0 0 5vw 0;
+   text-align: center;
+   display: flex;
+   justify-content: space-between;
+   width: 50vw;
+}
+
+.meow-gallery4 div{
+   width: auto;
+   margin: auto;
+   justify-content: center;
+}
+
+.meow-gallery4 img{
+   height: 35vw;
+   width: auto;
+}
+
+.meow-subcat{
+   display: flex;
+   justify-content: space-between;
+   text-align: left;
+}
+
+.meow-subcat div{
+   width: 25vw;
+}
+
+.meow-subcat img{
+   width: inherit;
+}
+
+/* TO THE WORLD */
+ #world-main{
+    margin: 0 15vw 0 15vw;
+ }
+
+.world-project-img{
+   display: flex;
+   justify-content: center;
+}
+
+.world-project-img img{
+   width: 20vw;
+   height: auto;
+}
+.project-content{
+   margin: 5vw 0 5vw 0;
+   display: flex;
+   justify-content: space-between;
+}
+
+.project-content div{
+   width: 25vw;
+   margin: auto;
+}
+
+.project-content img{
+   width: 25vw;
+}
+
+.meow-gallery{
+   margin: 0 0 5vw 0;
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+}
+
+/* NUCHEESECAKE */
+
+.cheese-project-about{
+   position: absolute;
+   top: 12vw;
+   width: 70vw;
+}
+
+
+.cheese-gallery div{
+   width: 35vw;
+   margin: 2vw auto auto auto;
+   justify-content: center;
+}
+
+.cheese-gallery img{
+   width: inherit;
+}
+
+.nucheeselogo img{
+   width: 25vw;
+}
+
+/* ABOUT */
+#about-hero{
+   background-color: #d9d9d9b0;
+   position: relative;
+   height: 45vw;
+}
+
+#about-hero h1{
+   position: absolute;
+   left: 20vw;
+   bottom: 32vw;
+}
+
+.about-intro{
+   display: flex;
+   gap: 10vw;
+   position: absolute;
+   left: 20vw;
+   bottom: 8vw;
+}
+
+.about-intro div{
+   width: 25vw;
+   margin: auto 0 auto 0;
+}
+
+.about-intro img{
+   width: 30vw;
+   border-radius: 8px;
+}
+
+.about-gallery{
+   margin-top: 5vw;
+}
+
+ .about-collection{
+    display: flex;
+    justify-content: space-between;
+   margin-top: 2vw;
+ }
+
+ .about-collection div{
+    width: 20vw;
+    height: 25vw;
+   background-color: #d9d9d9b0;
+   border-radius: 8px;
+   overflow: hidden;
+   position: relative;
+ }
+
+ .about-collection h3{
+   margin: 2vw 1vw 0 1vw;
+   color: #C71F02;
+ }
+
+ .about-collection p{
+   margin: 0 1vw 2vw 1vw;
+ }
+
+ .about-collection img{
+    width: 18vw;
+    height: auto;
+    border-radius: 8px;
+    position: absolute;
+    top: 10vw;
+    left: 1vw;
+ }
+
+ /* MAIN */
+ /* PHONE SCREEN */
+
+@media screen and (max-width: 800px) {
+   h1{
+      font-size: 5vw;
+   }
+   h2{
+      font-size: 4vw;
+   }
+   p,a,h3{
+      font-size: 2vw;
+   }
+
+   .nav{
+    display: none;
+   }
+
+   .phone-nav{
+      position: sticky;
+      top:10px;
+  z-index: 10000;
+      height: 0;
+   }
+
+   .phone-nav img{
+      width: 8vw;
+      height: auto;
+   }
+
+#about-hero{
+   height: 60vw;
+}
+
+#about-hero h1{
+   top: 10vw;
+   left: 6vw;
+}
+
+.about-intro img{
+   width: 40vw;
+   border-radius: 8px;
+}
+
+
+.about-intro div{
+   width: 40vw;
+   margin: auto 0 auto 0;
+}
+
+.about-intro{
+   left: 6vw;
+   gap: 3vw;
+}
+
+.about-collection{
+   flex-direction: column;
+   align-items: center;
+   gap: 5vw;
+}
+
+ .about-collection div{
+    width: 40vw;
+    height: 50vw;
+   background-color: #d9d9d9b0;
+   border-radius: 8px;
+   overflow: hidden;
+   position: relative;
+ }
+
+ .about-collection h3{
+   margin: 2vw 1vw 0 1vw;
+   color: #C71F02;
+ }
+
+ .about-collection p{
+   margin: 0 1vw 2vw 1vw;
+ }
+
+ .about-collection img{
+    width: 38vw;
+    height: auto;
+    border-radius: 8px;
+    position: absolute;
+    top: 15vw;
+    left: 1vw;
+ }
+
+.about-gallery{
+   text-align: center;
+}
+
+
+   .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+#hero{
+    width: auto;
+    height: 60vw;
+    background-color: #C71F02;
+   text-align: center;
+   position: relative;
+ }
+
+#hero h1{
+   width: 40vw;
+   padding: 0;
+   margin: auto;
+   padding-top: 12vw;
+}
+
+ #hero .hero-btn{
+   width: 25vw;
+   margin: 4vw auto;
+ }
+
+ #hero button{
+    color: #C71F02;
+    background-color: white;
+    border-radius: 12px;
+    border: 0;
+    width: inherit;
+    height: 5vw;
+    font-size: 1.25em;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ #hero button:hover{
+   cursor: pointer;
+   background-color: black;
+   color: white;
+   transition: 400ms;
+ }
+
+ #hero .headerImage{
+    width: 60vw;
+    height: 16vh;
+    background-color: #E1E075;
+    margin:auto;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-width: 6px 6px 0 6px;
+    border-color: white;
+    border-style: solid;
+    position: absolute;
+    bottom: 0;
+    left: 18%;
+ }
+
+ #hero .headerImage img{
+    height: inherit;
+    width: auto;
+ }
+
+
+
+  #home-main{
+      display: none;
+   }
+
+   #phone-main{
+      margin: 6vw 8vw 0 8vw;
+
+   }
+
+   .gallery{
+      margin-top: 6vw;
+      height: auto;
+   }
+
+   .slideshow-container{
+      width: auto;
+      height: 90vw;
+      margin: auto;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+   }
+
+   .slideshow-container img{
+      width: 50vw;
+   }
+   .text{
+      width: 50vw;
+   }
+
+   .arrow{
+      margin: auto;
+   }
+
+   .next, .prev{
+      
+      font-size: 5vw;
+   }
+
+   #home-main{
+    margin: 0 15vw 0 15vw;
+ }
+
+ .introduction h3, p{
+    color: #6e6e6e;
+ }
+ .introduction{
+    width: auto;
+    height: auto;
+ }
+
+ .gallery h2{
+    text-align: center;
+ }
+
+ .collection1 h2{
+    text-align: center;
+ }
+
+ .collection1{
+    display: flex;
+
+ }
+
+ .collection1 div{
+    width: 20vw;
+    height: auto;
+    margin: auto;
+ }
+
+ .collection1 img{
+    width: inherit;
+    height: auto;
+    border-radius: 8px;
+ }
+
+ /* PORTFOLIO */
+
+ .filter{
+   width: 55vw;
+ }
+
+ #portfolio-hero{
+  box-shadow: rgba(128, 128, 128, 0.545) 0px 10px 10px;
+  height: 30vw;
+  position: relative;
+  margin-bottom: 3vw;
+ }
+
+#portfolio-hero h1{
+   width: 40vw;
+    color:#C71F02;
+    position: absolute;
+    bottom: 20px;
+    left: 30%;
+    margin: 0;
+    padding: 0;
+ }
+
+ .project-header{
+   height: 40vw;
+}
+
+.portfolio-character{
+   gap: 3vw;
+    display:flex;
+    flex-wrap: wrap;
+    margin-bottom: 7vw;
+ }
+
+.portfolio-character div{
+    width: 32vw;
+    height: 32vw;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.572);
+    border-radius: 8px;
+ }
+
+ .portfolio-character div:hover{
+   scale: 0.95;
+   opacity: 90%;
+   transition: 300ms;
+ }
+
+.portfolio-character img{
+    width: inherit;
+    height: auto;
+    border-radius: 8px;
+ }
+
+ /* TOTHE WORLD */
+  #world-main{
+    display: none;
+ }
+ .world-slideshow-container{
+      width: auto;
+      height: 40vw;
+      margin: auto auto 3vw auto;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+ }
+
+ .world-slideshow-container img{
+   height: 40vw;
+ }
+}
+
+@media screen and (min-width: 801px) {
+   #phone-main{
+      display: none;
+   }
+
+   .phone-nav{
+      display: none;
+   }
+
+   #home-main{
     margin: 0 15vw 0 15vw;
  }
 
@@ -193,7 +971,6 @@ body{
     height: 20vw;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.572);
     border-radius: 8px;
-    margin-bottom: 7vw;
  }
 
  .portfolio-character div:hover{
@@ -204,76 +981,77 @@ body{
 
 .portfolio-character img{
     width: inherit;
-    height: inherit;
+    height: auto;
     border-radius: 8px;
  }
 
-
- .filter{
-   position: sticky;
-   z-index: 1000;
-   top: 30px;
-   background-color: #b6b6b642;
-   backdrop-filter: blur(8px) ;
-   display: flex;
-   width: 40vw;
-   height: auto;
-   margin: auto;
-   border-radius:24px;
  }
 
- .filter div{
-   margin: auto;
 
+
+
+
+
+  /* FOOTER */
+@media screen and (max-width: 800px) {
+.footer{
+    height: auto;
+    width: auto;
+    margin: 20px 0 0 0;
+    text-align: center;
+    border-top: solid 1px rgba(128, 128, 128, 0.671);
+}
+
+.footer h2{
+   font-size: 2.25vw;
+}
+
+.footer-flex{
+   height: 20vw;
+    display: flex;
+    gap: 5vw;
+    padding: 2vw;
+    align-items: center
+}
+
+.footer-flex div{
+   height: auto                           
+}
+
+.footer-logo img{
+   height: 12vw;
+   width: auto;
+   padding-bottom: 3vw;
+}
+
+.footer-nav ol{
+    margin: 2.15vw;
+    padding: 0;
+}
+
+.footer-nav ol li{
+   display: inline-block;
+    margin: 1vw;
+}
+
+.footer-nav ol li a{
+/* We could change the actual text in the links if wanted */
+    transition: .3s all ease;
+    color: black;
+    text-decoration: none;
+    font-size: 2vw;
  }
 
-.filter p{
-   color: rgb(67, 67, 67);
+ .footer-nav ol li a:hover{
+   transition: .3s all ease;
+   color:#C71F02;
+ }
 
+   
 }
 
-.filter a:hover{
-   opacity: 60%;
-   transition: 300ms;
-}
+@media screen and (min-width: 800px) {
 
-#character, #motion, #logo{
-   scroll-margin-top: 7vw;
-}
-
-.project-img{
-   display: flex;
-   justify-content: center;
-}
-
-.project-img img{
-   width: 30vw;
-   height: auto;
-}
-
-.project-about{
-   position: absolute;
-   top: 25vw;
-   width: 70vw;
-}
-
-.project-content{
-   margin: 5vw 0 5vw 0;
-   display: flex;
-   justify-content: space-between;
-}
-
-.project-content div{
-   width: 25vw;
-   margin: auto;
-}
-
-.project-content img{
-   width: 25vw;
-}
- 
-
- /* FOOTER */
 .footer{
     height: auto;
     width: auto;
@@ -326,3 +1104,6 @@ body{
    transition: .3s all ease;
    color:#C71F02;
  }
+  
+}
+
